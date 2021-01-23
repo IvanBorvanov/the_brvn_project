@@ -493,6 +493,7 @@ p {
 /* contact */
 .contact {
     background: url(../img/contact.jpg) center no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
