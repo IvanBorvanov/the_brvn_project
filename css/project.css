@@ -26,8 +26,9 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
+    padding: 0 25px;
 }
 
 .intro {
@@ -89,14 +90,14 @@ span {
 
 .header_nav {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
 }
 
 .nav_link {
     color: #fff;
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 15px;
 
     transition: color 0.2s linear;
 }
@@ -142,6 +143,7 @@ span {
 .services_inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .services_inv {
@@ -201,6 +203,7 @@ span {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 400;
+    flex-wrap: wrap-reverse;
 }
 
 .portfolio_link {
@@ -226,6 +229,7 @@ span {
     margin-top: 40px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -442,18 +446,13 @@ p {
 .testimonials_title {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
-}
-
-.feedback_cont {
-    margin-bottom: 60px;
+    margin: 60px 0 40px;
 }
 
 .testimonials_text {
     text-transform: uppercase;
     font-size: 30px;
     color: #515f67;
-    margin-bottom: 40px;
 }
 
 .testimonials_text::after {
@@ -490,6 +489,10 @@ p {
     padding-left: 40px;
 }
 
+.feedback_cont {
+    margin-bottom: 60px;
+}
+
 /* contact */
 .contact {
     background: url(../img/contact.jpg) center no-repeat;
@@ -500,7 +503,7 @@ p {
 }
 
 .contact_title {
-    margin-top: 60px;
+    margin: 60px 0 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -510,7 +513,6 @@ p {
     align-items: center;
     color: #fff;
     font-size: 30px;
-    margin-bottom: 40px;
 }
 
 .contact_title_text::after {
@@ -592,9 +594,383 @@ input[type=submit]:hover {
 
 
 textarea {
+    height: 200px;
     resize: none;
     outline: none;
     width: 90%;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* MOBILE ADAPTATION SECTION */
+
+@media (max-width: 990px) {
+
+    /* header section */
+    .header {
+        padding: 0;
+    }
+
+    /*services section*/
+    .services_title {
+        margin: 20px auto 20px;
+    }
+
+    .inv_text {
+        margin-bottom: 30px;
+    }
+
+    /* portfolio section */
+    .portfolio_inner {
+        margin-top: 30px;
+    }
+
+    /* video section */
+    .video_inner {
+        margin: 30px 0;
+    }
+
+    /* twitter section */
+    .twitter_title {
+        margin: 30px 0 20px;
+    }
+
+    .twitter_text {
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    /* john doe section */
+    .john_title {
+        margin: 30px auto 20px;
+    }
+
+    .john_inner {
+        margin-bottom: 40px;
+    }
+
+    /* testimonials */
+    .testimonials_title {
+        margin: 30px 0 30px;
+    }
+
+    .feedback_cont {
+        margin-bottom: 30px;
+    }
+
+    /* contact section */
+    .contact_title {
+        margin: 30px 0;
+    }
+
+    .contact_page_text {
+        font-size: 13px;
+    }
+
+    .action_page {
+        padding-left: 15px;
+    }
+
+    input[type="submit"] {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 770px) {
+   
+    /* header section */
+    .header_logo {
+        font-size: 30px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    /* intro section */
+    .intro_title {
+        font-size: 25px;
+    }
+
+    /*services section*/
+    .services_title {
+        font-size: 25px;
+    }
+
+    .inv_img {
+        height: 35px;
+        margin-bottom: 0;
+    }
+
+    .inv_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .inv_text {
+        margin-bottom: 30px;
+    }
+
+    /* portfolio section */
+    .portfolio {
+        height: 100%;
+    }
+
+    .portfolio_inner {
+        margin-top: 20px;
+    }
+
+    .portfolio_logo {
+        font-size: 20px;
+    }
+
+    .portfolio_nav {
+        font-size: 14px;
+    }
+
+    .portfolio_link {
+        margin: 0 15px;
+    }
+
+    .card_img {
+        margin-bottom: 30px;
+    }
+
+    /* video section */
+    .video_inner {
+        margin: 20px 0;
+    }
+
+    .video_title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .video_text {
+        margin-bottom: 20px;
+    }
+
+    /* twitter section */
+    .twitter_title {
+        margin: 20px 0 20px;
+    }
+
+    .title_text {
+        font-size: 20px;
+    }
+
+    .twitter_text {
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .title_icon {
+        font-size: 20px;
+    }
+
+    /* john doe section */
+    .john_title {
+        margin: 20px auto 20px;
+        font-size: 20px;
+    }
+
+    .john_icon {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .john_inner {
+        margin-bottom: 20px;
+    }
+
+    /* testimonials */
+    .testimonials_title {
+        margin: 20px 0 20px;
+    }
+
+    .testimonials_text {
+        font-size: 20px;
+    }
+
+    .testimonials_icon {
+        font-size: 20px;
+    }
+
+    .feedback_cont {
+        margin-bottom: 30px;
+    }
+
+    .feedback_text {
+        font-size: 14px;
+    }
+
+    /* contact section */
+    .contact {
+        height: 100%;
+    }
+
+    .contact_title {
+        margin: 20px 0;
+    }
+
+    .contact_title_text {
+        font-size: 20px;
+        color: #515f67;
+    }
+
+    .contact_title_text::after {
+        background-color: #515f67;
+    }
+
+    .contact_title_icon {
+        font-size: 20px;
+    }
+
+    .contact_page_text {
+        font-size: 11px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 575px) {
+   
+    /* header section */
+    .header_logo {
+        font-size: 30px;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    /* intro section */
+    .intro_title {
+        font-size: 18px;
+    }
+
+    /*services section*/
+    .services_title {
+        font-size: 25px;
+    }
+
+    .services_inner {
+        display: flex;
+    }
+
+    .services_inv {
+        flex: none;
+        width: 50%;
+    }
+
+    /* portfolio section */
+    .portfolio_inner {
+        margin-top: 20px;
+    }
+
+    .portfolio_logo {
+        font-size: 20px;
+    }
+
+    .portfolio_nav {
+        display: none;        
+    }
+
+    .portfolio_link {
+        margin: 0 15px;
+    }
+
+    .portfolio_inner {
+        display: block;
+    }
+
+    .card_column {
+        width: 40%;
+    }
+
+    /* video section */
+    .video_inner {
+        display: block;
+    }
+
+    .youtube {
+        /* display: block; */
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .video_title {
+        margin-bottom: 20px;
+    }
+
+    .video_text {
+        margin-bottom: 20px;
+    }
+
+    /* contsct section */
+    .contact_container {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .contact_column {
+        width: 100%;
+    }
+
+    .contact_page_text {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:340px) {
+    .container {
+        max-width: 1030px;
+        padding: 0 15px;
+    }
+
+
+    /*header*/
+    .header {
+        padding: 10px 0;
+    }
+
+    /*intro*/
+    .intro_title {
+        font-size: 15px;
+    }
+
+    /*video*/
+    .youtube {
+        width: 250px;
+    }
+
+    /*john*/
+    .john_inner {
+        display: block;
+    }
+
+    .john_content {
+        width: 100%;
+    }
+
+    /*contact*/
+    .contact_title_text {
+        color: #fff;
+    }
+
+    .contact_title_text::after {
+        background-color: #fff;
+    }
+
+    input[type="submit"] {
+        width: 40%;
+    }
 
 }
